@@ -1,0 +1,25 @@
+{
+  "name": "as-me",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sanjay1909/as-me",
+  "authors": [
+    "Sanjay krishna anbalagan <sanjay1909@gmail.com>"
+  ],
+  "description": "digital Big brother",
+  "main": "index.html",
+  "keywords": [
+    "personl",
+    "informatics"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4"
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>navbar-toggle</title>
+
+    <style>
+        .container {
+            height: 30px;
+            width: 340px;
+            padding: 2px 2px;
+            font-size: 12px;
+        }
+        /* Flaot left side inside its parent container
+         * and left positon is realtive to previously rendered float:left object.
+         */
+
+        .float {
+            float: left;
+        }
+
+        .after-float {
+            clear: left;
+        }
+
+        .border {
+            border-style: solid;
+            border-width: 8px;
+            margin: 2px 2px 2px 2px;
+        }
+
+        .color-red {
+            border-color: red;
+        }
+
+        .color-yellow {
+            border-color: yellow;
+        }
+
+        .color-green {
+            border-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container float border color-red">
+        <p class="border" style=" border-width: 1px;">Left Float</p>
+    </div>
+    <div class="container float border color-yellow">
+        <p class="border" style=" border-width: 1px;">Default: Next Left Float will be relative to previous Left Float</p>
+    </div>
+    <div class="container after-float border color-green">
+        <p class="border" style=" border-width: 1px;">Float Cleared</p>
+    </div>
+    <script src="https://gist.github.com/sanjay1909/61a7fd82289a1a7d6f9a.js"></script>
+
+</body>
+
+</html>

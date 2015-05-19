@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>navbar-toggle</title>
+
+    <style>
+        /*By default position is static*/
+
+        .navbar-toggle {
+            background-color: transparent;
+            background-image: none;
+        }
+        /* relative behaves like static unless you move them using top/bottom/right/left property*/
+
+        .position {
+            position: relative;
+        }
+        /* This on its own, this won't affect the sizing of its parent  container ,
+         * This will stay right in its parent container.
+         */
+
+        .float {
+            float: right;
+        }
+
+        .navbar-brand {
+            padding: 15px 15px;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div>
+            <button class="navbar-toggle">
+                <span>Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" style="float:left" href="#">Brand</a>
+        </div>
+        <div>
+            <button class="navbar-toggle position">
+                <span>Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" style="float:left" href="#">Brand</a>
+        </div>
+        <div>
+            <button class="navbar-toggle position float">
+                <span>Toggle navigation</span>
+            </button>
+            <a class="navbar-brand" href="#">Brand</a>
+        </div>
+
+    </nav>
+</body>
+
+</html>

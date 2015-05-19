@@ -20,6 +20,11 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "~3.3.4"
+    "bootstrap": "~3.3.4",
+    "d3": "~3.5.5",
+    "D3Chart": "https://github.com/sanjay1909/D3Chart.git",
+    "react-bootstrap": "~0.22.2",
+    "react": "~0.13.3",
+    "font-awesome": "~4.3.0"
   }
 }

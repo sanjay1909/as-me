@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Box Model</title>
+
+</head>
+
+<body>
+    <div>
+        <input type="range" min=0 max=25 value=0 id="margin" oninput="outputUpdate.call(this,value)">Margin: </input>
+        <output for="margin" id="marginOutput"></output>
+    </div>
+    <div>
+        <input type="range" min=0 max=25 value=0 id="borderWidth" oninput="outputUpdate.call(this,value)">Border: </input>
+        <output for="borderWidth" id="borderWidthOutput"></output>
+    </div>
+    <div>
+        <input type="range" min=0 max=25 value=0 id="padding" oninput="outputUpdate.call(this,value)">Padding: </input>
+        <output for="padding" id="paddingOutput"></output>
+    </div>
+    <div>
+        <input type="range" min=0 max=300 value=300 id="width" oninput="outputUpdate.call(this,value)">Width: </input>
+        <output for="width" id="widthOutput"></output>
+    </div>
+    <br/>
+    <br/>
+    <div>Div total size depends on Margin + border + Padding + width(content)</div>
+    <br/>
+    <br/>
+    <div id="demo">CSS Box Model </div>
+
+    <script>
+        function outputUpdate(val) {
+            document.querySelector('#' + this.id + 'Output').value = val;
+            if (this.id === 'borderWidth') demo.style.borderStyle = 'solid';
+            demo.style[this.id] = val + 'px';
+        }
+    </script>
+
+</body>
+
+</html>
